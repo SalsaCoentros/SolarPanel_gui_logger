@@ -1,0 +1,503 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strchr.c
+[v _strchr strchr `(*.4uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strstr.c
+[v _strstr strstr `(*.4uc  1 e 1 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"15 C:\Users\Maria Carvalho\MPLABXProjects\lab2.X\main.c
+[v _setup_USART setup_USART `(v  1 e 1 0 ]
+"29
+[v _enviar_caracter enviar_caracter `(v  1 e 1 0 ]
+"34
+[v _enviar enviar `(v  1 e 1 0 ]
+"42
+[v _botao botao `(v  1 e 1 0 ]
+"55
+[v _debouncer debouncer `(i  1 e 2 0 ]
+"72
+[v _receber_caracter receber_caracter `(uc  1 e 1 0 ]
+"79
+[v _receber_msg receber_msg `(v  1 e 1 0 ]
+"92
+[v _motorRight motorRight `(v  1 e 1 0 ]
+"98
+[v _motorLeft motorLeft `(v  1 e 1 0 ]
+"104
+[v _motorStop motorStop `(v  1 e 1 0 ]
+"110
+[v _sendMotorState sendMotorState `(v  1 e 1 0 ]
+"123
+[v _normalMode normalMode `(v  1 e 1 0 ]
+"151
+[v _standbyMode standbyMode `(v  1 e 1 0 ]
+"159
+[v _stringToInt stringToInt `(i  1 e 2 0 ]
+"168
+[v _mostraSensores mostraSensores `(v  1 e 1 0 ]
+"175
+[v _enviarAck enviarAck `(v  1 e 1 0 ]
+"179
+[v _mostraTemp mostraTemp `(v  1 e 1 0 ]
+"186
+[v _sensor sensor `(i  1 e 2 0 ]
+"213
+[v _checkXML checkXML `(v  1 e 1 0 ]
+"280
+[v _main main `(i  1 e 2 0 ]
+[s S108 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[u S117 . 1 `S108 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES117  1 e 1 @6 ]
+[s S131 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S140 . 1 `S131 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES140  1 e 1 @7 ]
+[s S152 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"357
+[u S161 . 1 `S152 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES161  1 e 1 @8 ]
+"964
+[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
+[s S23 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"994
+[s S32 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S36 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S39 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S42 . 1 `S23 1 . 1 0 `S32 1 . 1 0 `S36 1 . 1 0 `S39 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES42  1 e 1 @24 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S186 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1190
+[s S192 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S200 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S203 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S206 . 1 `S186 1 . 1 0 `S192 1 . 1 0 `S200 1 . 1 0 `S203 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES206  1 e 1 @31 ]
+[s S241 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S250 . 1 `S241 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES250  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S262 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S271 . 1 `S262 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES271  1 e 1 @136 ]
+"1999
+[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
+[s S68 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2025
+[s S77 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S84 . 1 `S68 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES84  1 e 1 @152 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2572
+[v _GO GO `VEb  1 e 0 @250 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"3037
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"358 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"280 C:\Users\Maria Carvalho\MPLABXProjects\lab2.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"288
+[v main@msg msg `[40]uc  1 a 40 0 ]
+"297
+[v main@op op `i  1 a 2 60 ]
+"290
+[v main@motorState motorState `i  1 a 2 58 ]
+"296
+[v main@mode mode `i  1 a 2 56 ]
+"294
+[v main@monitorizacao monitorizacao `i  1 a 2 54 ]
+"291
+[v main@t t `i  1 a 2 52 ]
+"298
+[v main@valTemp valTemp `i  1 a 2 50 ]
+"295
+[v main@temperature temperature `i  1 a 2 48 ]
+"293
+[v main@limit limit `i  1 a 2 46 ]
+"292
+[v main@night night `i  1 a 2 44 ]
+"289
+[v main@lastValidButtonState lastValidButtonState `i  1 a 2 42 ]
+[v main@lastButtonState lastButtonState `i  1 a 2 40 ]
+"334
+} 0
+"151
+[v _standbyMode standbyMode `(v  1 e 1 0 ]
+{
+[v standbyMode@motorState motorState `*.4i  1 a 1 wreg ]
+[v standbyMode@motorState motorState `*.4i  1 a 1 wreg ]
+[v standbyMode@monitorizacao monitorizacao `i  1 p 2 12 ]
+[v standbyMode@motorState motorState `*.4i  1 a 1 2 ]
+"157
+} 0
+"15
+[v _setup_USART setup_USART `(v  1 e 1 0 ]
+{
+"27
+} 0
+"79
+[v _receber_msg receber_msg `(v  1 e 1 0 ]
+{
+[v receber_msg@output output `*.4uc  1 a 1 wreg ]
+"80
+[v receber_msg@i i `ui  1 a 2 6 ]
+"81
+[v receber_msg@x x `i  1 a 2 4 ]
+"79
+[v receber_msg@output output `*.4uc  1 a 1 wreg ]
+[v receber_msg@output output `*.4uc  1 a 1 8 ]
+"90
+} 0
+"72
+[v _receber_caracter receber_caracter `(uc  1 e 1 0 ]
+{
+"73
+[v receber_caracter@carac carac `uc  1 a 1 1 ]
+"77
+} 0
+"123
+[v _normalMode normalMode `(v  1 e 1 0 ]
+{
+[v normalMode@left left `i  1 p 2 0 ]
+[v normalMode@right right `i  1 p 2 2 ]
+[v normalMode@night night `i  1 p 2 4 ]
+[v normalMode@limit limit `i  1 p 2 6 ]
+[v normalMode@motorState motorState `*.4i  1 p 1 8 ]
+[v normalMode@monitorizacao monitorizacao `i  1 p 2 9 ]
+"149
+} 0
+"110
+[v _sendMotorState sendMotorState `(v  1 e 1 0 ]
+{
+[v sendMotorState@motorState motorState `i  1 p 2 8 ]
+[v sendMotorState@monitorizacao monitorizacao `i  1 p 2 10 ]
+"121
+} 0
+"104
+[v _motorStop motorStop `(v  1 e 1 0 ]
+{
+"108
+} 0
+"92
+[v _motorRight motorRight `(v  1 e 1 0 ]
+{
+"96
+} 0
+"98
+[v _motorLeft motorLeft `(v  1 e 1 0 ]
+{
+"102
+} 0
+"55
+[v _debouncer debouncer `(i  1 e 2 0 ]
+{
+[v debouncer@lastButtonState lastButtonState `*.4i  1 a 1 wreg ]
+[v debouncer@lastButtonState lastButtonState `*.4i  1 a 1 wreg ]
+[v debouncer@t t `*.4i  1 p 1 0 ]
+"57
+[v debouncer@lastButtonState lastButtonState `*.4i  1 a 1 7 ]
+"70
+} 0
+"213
+[v _checkXML checkXML `(v  1 e 1 0 ]
+{
+[v checkXML@msg msg `*.4uc  1 a 1 wreg ]
+"214
+[v checkXML@teste teste `i  1 a 2 49 ]
+"213
+[v checkXML@msg msg `*.4uc  1 a 1 wreg ]
+[v checkXML@limit limit `*.4i  1 p 1 40 ]
+[v checkXML@night night `*.4i  1 p 1 41 ]
+[v checkXML@mode mode `*.4i  1 p 1 42 ]
+[v checkXML@monitorizacao monitorizacao `*.4i  1 p 1 43 ]
+[v checkXML@temperature temperature `*.4i  1 p 1 44 ]
+[v checkXML@valTemp valTemp `*.4i  1 p 1 45 ]
+[v checkXML@op op `*.4i  1 p 1 46 ]
+"215
+[v checkXML@msg msg `*.4uc  1 a 1 51 ]
+"278
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strstr.c
+[v _strstr strstr `(*.4uc  1 e 1 0 ]
+{
+[v strstr@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strstr@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strstr@s2 s2 `*.24DCuc  1 p 1 10 ]
+[v strstr@s1 s1 `*.4DCuc  1 a 1 0 ]
+"12
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+[v strncmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strncmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strncmp@s2 s2 `*.24DCuc  1 p 1 4 ]
+[v strncmp@len len `ui  1 p 2 5 ]
+[v strncmp@s1 s1 `*.4DCuc  1 a 1 9 ]
+"14
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strchr.c
+[v _strchr strchr `(*.4uc  1 e 1 0 ]
+{
+[v strchr@ptr ptr `*.4DCuc  1 a 1 wreg ]
+[v strchr@ptr ptr `*.4DCuc  1 a 1 wreg ]
+[v strchr@chr chr `i  1 p 2 0 ]
+[v strchr@ptr ptr `*.4DCuc  1 a 1 2 ]
+"11
+} 0
+"159 C:\Users\Maria Carvalho\MPLABXProjects\lab2.X\main.c
+[v _stringToInt stringToInt `(i  1 e 2 0 ]
+{
+[v stringToInt@string string `*.4uc  1 a 1 wreg ]
+"160
+[v stringToInt@result result `i  1 a 2 2 ]
+[v stringToInt@i i `i  1 a 2 0 ]
+"159
+[v stringToInt@string string `*.4uc  1 a 1 wreg ]
+[v stringToInt@string string `*.4uc  1 a 1 4 ]
+"166
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.26DCuc  1 a 2 2 ]
+"4
+[v strlen@s s `*.26DCuc  1 p 2 0 ]
+"13
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"186 C:\Users\Maria Carvalho\MPLABXProjects\lab2.X\main.c
+[v _sensor sensor `(i  1 e 2 0 ]
+{
+[v sensor@chanel chanel `i  1 p 2 0 ]
+"211
+} 0
+"179
+[v _mostraTemp mostraTemp `(v  1 e 1 0 ]
+{
+"180
+[v mostraTemp@valString valString `[20]uc  1 a 20 18 ]
+"179
+[v mostraTemp@valTemp valTemp `i  1 p 2 15 ]
+"184
+} 0
+"168
+[v _mostraSensores mostraSensores `(v  1 e 1 0 ]
+{
+"169
+[v mostraSensores@valString valString `[20]uc  1 a 20 20 ]
+"168
+[v mostraSensores@valLeft valLeft `i  1 p 2 15 ]
+[v mostraSensores@valRight valRight `i  1 p 2 17 ]
+"173
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 11 ]
+"512
+[v sprintf@c c `uc  1 a 1 14 ]
+"521
+[v sprintf@prec prec `c  1 a 1 10 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 9 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 13 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"175 C:\Users\Maria Carvalho\MPLABXProjects\lab2.X\main.c
+[v _enviarAck enviarAck `(v  1 e 1 0 ]
+{
+"177
+} 0
+"34
+[v _enviar enviar `(v  1 e 1 0 ]
+{
+"35
+[v enviar@i i `i  1 a 2 6 ]
+"34
+[v enviar@msg msg `*.26uc  1 p 2 1 ]
+"40
+} 0
+"29
+[v _enviar_caracter enviar_caracter `(v  1 e 1 0 ]
+{
+[v enviar_caracter@c c `uc  1 a 1 wreg ]
+[v enviar_caracter@c c `uc  1 a 1 wreg ]
+[v enviar_caracter@c c `uc  1 a 1 0 ]
+"32
+} 0
+"42
+[v _botao botao `(v  1 e 1 0 ]
+{
+[v botao@mode mode `*.4i  1 a 1 wreg ]
+[v botao@mode mode `*.4i  1 a 1 wreg ]
+[v botao@lastValidButtonState lastValidButtonState `*.4i  1 p 1 0 ]
+[v botao@mode mode `*.4i  1 a 1 6 ]
+"53
+} 0
