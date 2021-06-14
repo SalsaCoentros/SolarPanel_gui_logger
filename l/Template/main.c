@@ -372,7 +372,12 @@ int main(void)
 			//normal
 			if(lastMode){
 				lastMode=0;
-				limit=requestI2C();
+				aux=requestI2C();
+				if(aux==0){
+					enviar_msg("<wrn>\n\tError 3\n</wrn>\n");
+				}else {
+					limit=aux;
+				}
 			}
 			
 		
